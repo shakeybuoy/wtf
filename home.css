@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Teko&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Teko", sans-serif;
+}
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+.table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+.heading {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  color: #2f00ff;
+  letter-spacing: 4px;
+  text-shadow: 5px 3px 5px #613eff;
+  font-family: "Josefin Sans", sans-serif;
+}
+p {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 5px #000000;
+  font-family: "Montserrat", sans-serif;
+}
+table,
+th,
+td {
+  font-size: 30px;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  width: 150px;
+  border: 5px solid #ffc400;
+  background: #0505054d;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+button {
+  font-family: "Teko", sans-serif;
+  height: 70px;
+  font-size: 50px;
+  padding: 0px 50px 0px 50px;
+  background-color: #ff6666;
+  border: none;
+  cursor: pointer;
+  text-shadow: 1px 1px 5px #ff0303;
+  border-radius: 60px;
+  box-shadow: 0px 10px 0px 0px #9c4848;
+  transition: all 0.4s;
+}
+button:hover {
+  box-shadow: 0px 0px 0px 0px #f6b6b600;
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+.ocean {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(0deg, #021e77, #219cee);
+}
+
+.bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -40px;
+  opacity: 0.2;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.16;
+  }
+
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 200px;
+  }
+}
+
+.bubble--1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble--5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubble--6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubble--9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+
+.bubble--10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 25px;
+  height: 25px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -10.5s;
+  animation-duration: 19s;
+  opacity: 0.3;
+}

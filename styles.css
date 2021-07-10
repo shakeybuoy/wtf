@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Josefin+Slab:wght@500&family=Zen+Loop&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+/* Bubbles Bg */
+.ocean {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(0deg, #021e77, #219cee);
+}
+
+.bubble {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -40px;
+  opacity: 0.2;
+  animation: bubble 15s ease-in-out infinite,
+    sideWays 4s ease-in-out infinite alternate;
+}
+
+@keyframes bubble {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.16;
+  }
+
+  100% {
+    transform: translateY(-120vh);
+  }
+}
+
+@keyframes sideWays {
+  0% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 200px;
+  }
+}
+
+.bubble--1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+
+.bubble--5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+
+.bubble--6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+
+.bubble--9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+
+.bubble--10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+
+.bubble--11 {
+  width: 25px;
+  height: 25px;
+  left: 90%;
+  bottom: 30px;
+  animation-delay: -10.5s;
+  animation-duration: 19s;
+  opacity: 0.3;
+}
+
+/* Bubbles Bg */
+
+.content {
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+}
+
+.btn_grp {
+  margin-top: 150px;
+}
+
+button {
+  font-size: 50px;
+  font-family: "Anton", sans-serif;
+}
+
+#btn2,
+#btn1 {
+  background-color: #0000007c;
+  width: 120px;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.return,
+.fish {
+  background-color: #00517763;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.return:hover {
+  color: #ff0000;
+  background-color: #0000009d;
+  border-color: #ff0000;
+  box-shadow: 0px 0px 10px #ff0000;
+}
+.fish:hover {
+  background-color: #0000009d;
+  color: #ffe600;
+  border-color: #ffe600;
+  box-shadow: 0px 0px 10px #ffe600;
+}
+
+#btn1:hover,
+#btn2:hover {
+  background-color: #0000009d;
+  border-color: #8c69ff;
+  animation: none;
+  color: #8c69ff;
+  box-shadow: 0px 0px 10px #8c69ff;
+}
+.round {
+  color: #ffffff;
+  line-height: 0px;
+  font-size: 50px;
+  font-family: monospace;
+  text-shadow: 2px 2px 5px black;
+}
+.content h1 {
+  margin-top: -100px;
+  font-size: 100px;
+  font-family: "Anton", sans-serif;
+  text-shadow: 5px 3px 1px #ffffff67;
+}
+#txt {
+  /* border: 1px solid black; */
+  font-size: 23px;
+  text-align: left;
+  float: right;
+  margin-right: 200px;
+  margin-top: -400px;
+}
+.scoreCard {
+  text-align: left;
+  font-size: 28px;
+  padding-left: 60px;
+}
+.scoreBoard {
+  padding: 4px 0px 4px 0px;
+  margin-top: -650px;
+  margin-left: 70px;
+  width: 450px;
+  color: #ffffff;
+  font-family: "Zen Loop", cursive;
+  text-shadow: 2px 2px 5px black;
+  font-size: 35px;
+  background-color: #0000005d;
+  height: 580px;
+  border-radius: 10px 50px 25px 50px;
+}
+
+.heading {
+  margin-top: 0px;
+  text-align: center;
+  font-size: 150px;
+  font-family: "Amatic SC", cursive;
+  margin-bottom: 200px;
+  text-shadow: 4px 5px 8px #014064;
+}
+
+.heading:after {
+  content: "WHAT THE FISH !?";
+  animation: heading 4s linear 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+@keyframes heading {
+  0% {
+    content: "W";
+  }
+
+  4% {
+    content: "WH";
+  }
+
+  8% {
+    content: "WHA";
+  }
+
+  12% {
+    content: "WHAT";
+  }
+
+  16% {
+    content: "WHAT T";
+  }
+
+  20% {
+    content: "WHAT TH";
+  }
+
+  24% {
+    content: "WHAT THE ";
+  }
+
+  28% {
+    content: "WHAT THE F";
+  }
+
+  32% {
+    content: "WHAT THE FU";
+  }
+
+  36% {
+    content: "WHAT THE FUC";
+  }
+
+  40% {
+    content: "WHAT THE FUC";
+  }
+
+  44% {
+    content: "WHAT THE FUC*";
+  }
+
+  48% {
+    content: "WHAT THE FUC*?";
+  }
+
+  52% {
+    content: "WHAT THE FUC*";
+  }
+
+  56% {
+    content: "WHAT THE FUC";
+  }
+
+  60% {
+    content: "WHAT THE FU";
+  }
+
+  64% {
+    content: "WHAT THE F";
+  }
+
+  68% {
+    content: "WHAT THE FI ";
+  }
+
+  72% {
+    content: "WHAT THE FIS";
+  }
+
+  76% {
+    content: "WHAT THE FISH";
+  }
+
+  80% {
+    content: "WHAT THE FISH .";
+  }
+
+  84% {
+    content: "WHAT THE FISH ...";
+  }
+
+  88% {
+    content: "WHAT THE FISH ..";
+  }
+
+  92% {
+    content: "WHAT THE FISH .";
+  }
+
+  96% {
+    content: "WHAT THE FISH !";
+  }
+
+  100% {
+    content: "WHAT THE FISH !?";
+  }
+}
