@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  //overflow: hidden;
+  overflow: hidden;
   font-family: "Teko", sans-serif;
 }
 .middle {
@@ -75,7 +75,7 @@ button:hover {
 .ocean {
   position: relative;
   width: 100vw;
-  height: 200vh;
+  height: 100vh;
   background-image: linear-gradient(0deg, #021e77, #219cee);
 }
 
